@@ -1,4 +1,6 @@
-infile = open('../a1-siri-out-split/Whole_Blood/GTEX-ZXG5-0005-SM-57WCN-intron.PI.txt')
+import sys
+
+infile = open(sys.argv[1]) # example pi file : siri output
 outfile = open('ri_id.info','w')
 
 outfile.write('ri_id\t')
