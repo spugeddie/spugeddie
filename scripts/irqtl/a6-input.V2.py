@@ -1,6 +1,6 @@
 import sys
 
-infile1 = open('/mnt/isilon/xing_lab/parke2/z36-siri-v8/a0-misc/ri_id.info') # ri_id.info
+infile1 = open(sys.argv[4]) # ri_id.info
 infile2 = open(sys.argv[1]) # et file - a5-filt
 outfile1 = open(sys.argv[2],'w') # junc
 outfile2 = open(sys.argv[3],'w') # body
