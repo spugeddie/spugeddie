@@ -24,7 +24,7 @@ outfile1.write('#Chr\tstart\tend\tTargetID\t')
 outfile2.write('#Chr\tstart\tend\tTargetID\t')
 
 fields = infile2.readline().strip().split()[1:]
-fields = [i.split('/')[1] for i in fields]
+#fields = [i.split('/')[1] for i in fields]
 fields = ['-'.join(i.split('-')[:2]) for i in fields]
 
 outfile1.write('\t'.join(fields)+'\n')
