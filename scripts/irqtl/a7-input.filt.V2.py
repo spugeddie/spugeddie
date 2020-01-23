@@ -1,9 +1,9 @@
 import sys
 
-infile1 = open(sys.argv[1])
-infile2 = open('/mnt/isilon/xing_lab/parke2/z36-siri-v8/a0-misc/genotyped.samples.866')
+infile1 = open(sys.argv[1]) # input file
+infile2 = open(sys.argv[2]) # genotyped_samples_866
 
-outfile = open(sys.argv[2],'w')
+outfile = open(sys.argv[3],'w') # input.filt output
 
 list1 = [i.strip() for i in infile2.readlines()]
 
